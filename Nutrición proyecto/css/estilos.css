@@ -1,0 +1,261 @@
+/* Reset y estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Navegación */
+nav {
+  background-color: #009879;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #007f63;
+}
+
+/* Imágenes generales */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+/* Imágenes específicas */
+.logo {
+  width: 450px;
+  height: 250px;
+}
+
+.platoideal {
+  width: 250px;
+  height: 250px;
+}
+
+.vegetariano {
+  width: 500px;
+  height: 300px;
+}
+
+.consejos {
+  width: 400px;
+  height: 350px;
+}
+
+/* Títulos principales */
+.title,
+.licenciada,
+.beneficios,
+.recomendaciones {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.title {
+  color: rgb(238, 189, 125);
+}
+
+.licenciada {
+  color: rgb(134, 238, 125);
+}
+
+.beneficios {
+  color: rgb(234, 232, 82);
+}
+
+.recomendaciones {
+  color: rgb(106, 64, 184);
+}
+
+/* Subtítulos */
+.primersubtitulo,
+.segsubtitulo,
+.tercersubtitulo,
+.sub1,
+.ejercicio {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  font-weight: bolder;
+  color: rgb(160, 114, 225);
+}
+
+.primersubtitulo,
+.segsubtitulo,
+.tercersubtitulo {
+  font-weight: lighter;
+  color: rgb(135, 141, 222);
+}
+
+.sub1,
+.ejercicio {
+  font-weight: bolder;
+}
+
+/* Texto general */
+.sobremi,
+.texto1,
+.texto2,
+.item1,
+.item2,
+.info,
+.tip,
+.minombre,
+.consejo1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.819);
+  font-weight: normal;
+}
+
+.sobremi {
+  font-size: 25px;
+  color: burlywood;
+  font-weight: lighter;
+}
+
+.consejo1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.952);
+  font-weight: lighter;
+}
+
+.tip {
+  background-color: rgba(242, 205, 136, 0.45);
+}
+
+.caja {
+  background-color: rgb(227, 210, 244);
+  width: 200px;
+}
+
+.caja1 {
+  background-color: rgba(136, 136, 242, 0.45);
+  width: 200px;
+}
+
+/* Recetas */
+.plato-ideal,
+.platovegetariano {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.plato-ideal {
+  color: rgb(237, 113, 129);
+}
+
+.platovegetariano {
+  color: rgb(11, 156, 28);
+}
+
+.primerreceta,
+.segundareceta {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  color: rgb(206, 80, 114);
+  font-weight: lighter;
+}
+
+.tercerreceta,
+.cuartareceta {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  color: rgb(17, 206, 105);
+  font-weight: bolder;
+}
+
+.bloque1 {
+  background-color: rgba(150, 107, 133, 0.45);
+  width: 100px;
+}
+
+.bloque2 {
+  background-color: rgba(21, 133, 69, 0.45);
+  width: 100px;
+}
+
+/* Footer */
+footer {
+  background-color: #009879;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  margin-bottom: 5px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .platoideal,
+  .vegetariano,
+  .consejos {
+    width: 90% !important;
+    height: auto !important;
+  }
+}
+.recetas-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.receta-box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px;
+  max-width: 32%;
+}
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
